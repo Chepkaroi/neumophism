@@ -9,7 +9,7 @@
 </head>
 <body >
     <div class="header">
-        <span id="light" class="material-symbols-outlined">
+        <span id="light" onclick="LightMode()" class="material-symbols-outlined">
             light
         </span>
 
@@ -22,23 +22,6 @@
         <button id="btn1">Sign In</button>
     </div>
 
-    <script>
-        const dark = document.getElementById('space');
-        const container = document.querySelector('.container')
-        const header = document.querySelector('.header')
-        const btn = document.getElementById('btn')
-        const btn1 = document.getElementById('btn1')
-
-        function DarkMode() {
-            container.style.backgroundColor = 'black';
-            container.style.color = 'white';
-            header.style.backgroundColor = 'black';
-            btn.style.backgroundColor = 'black'
-            btn1.style.backgroundColor = 'black'
-            btn.style.color='white'
-            btn1.style.color='white'
-            btn.style.boxShadow= 'black'
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
