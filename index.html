@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumophism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body >
+    <div class="header">
+        <span id="light" class="material-symbols-outlined">
+            light
+        </span>
+
+        <span id="dark" onclick="DarkMode()" class="material-symbols-outlined">
+            dark_mode
+        </span>
+    </div>
+    <div class="container">
+        <button id="btn">Sign Up</button>
+        <button id="btn1">Sign In</button>
+    </div>
+
+    <script>
+        const dark = document.getElementById('space');
+        const container = document.querySelector('.container')
+        const header = document.querySelector('.header')
+        const btn = document.getElementById('btn')
+        const btn1 = document.getElementById('btn1')
+
+        function DarkMode() {
+            container.style.backgroundColor = 'black';
+            container.style.color = 'white';
+            header.style.backgroundColor = 'black';
+            btn.style.backgroundColor = 'black'
+            btn1.style.backgroundColor = 'black'
+            btn.style.color='white'
+            btn1.style.color='white'
+            btn.style.boxShadow= 'black'
+        }
+    </script>
+</body>
+</html>
